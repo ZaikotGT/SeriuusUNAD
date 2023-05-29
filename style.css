@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .titule {
+    color: rgb(255, 145, 35);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  header {
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    background: #C6FFDD;
+    background: -webkit-linear-gradient(to right, hsla(358, 89%, 72%, 0.3), hsla(42, 94%, 75%, 0.3), hsla(144, 100%, 89%, 0.3)), url(../imagenes/Inicio/fondo2.jpeg);
+    background: linear-gradient(to right, hsla(358, 89%, 72%, 0.3), hsla(42, 94%, 75%, 0.3), hsla(144, 100%, 89%, 0.3)), url(../imagenes/Inicio/fondo2.jpeg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-top: 20px; /* Ajusta el margen superior segun el menu inicio y buttons*/
+    margin-bottom: 50px; /* Ajusta el margen inferior según tus necesidades */   
+  }
+  
+  body div.titule {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    background-color: #474646;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    color: #ff8c00;
+  }
+
+  .img h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #221818;
+    text-shadow: 0 0 3px rgb(68, 25, 25);
+  }
+
+  .img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  img {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .main-video 
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+  header .textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 3px black;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer {
+    background: #414141;
+    padding: 30px 0;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+  } 
+  
+  .titulo-final {
+    text-align: left;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+  }
+
+  footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin: auto;
+  overflow: hidden;
+  text-align: left;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-form {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.column {
+  width: 100%; /* Ajusta el ancho de las columnas según tus necesidades */
+  margin-bottom: 10px;
+}
+
+.column input[type="text"],
+.column input[type="email"] {
+  width: 100%; /* Ancho completo por defecto */
+  padding: 5px;
+}
+
+footer form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+footer input[type="text"],
+footer input[type="email"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+footer input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+}
+
+footer input[type="submit"]:hover {
+  background-color: #555;
+}
+
+footer .column {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .column label,
+footer .column input {
+  width: 100%;
+}
+
+/*Responsive*/
+@media screen and (max-width: 480px) 
+{
+    .main-video {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .img img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    header {
+      background-position: center;
+    }
+    
+    .imagen-about-us {
+      width: 90%;
+    }
+    
+    .servicios-cont {
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .servicio-ind {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .servicio-ind:nth-child(1),
+    .servicio-ind:nth-child(2) {
+      margin-bottom: 60px;
+    }
+    
+    .servicio-ind img {
+      width: 60%;
+    }
+
+    footer {
+        margin-top: 20px; /* Espacio de 20px hacia arriba */
+      }
+  
+}
+@media screen and (min-width: 700px) {
+    /* Estilos para pantalla completa */
+    .img {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: center;
+      flex-basis: 100%;
+    }
+  
+    img {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      max-height: 50%;
+      max-width: 50%;
+    }
+  
+    .textos-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  
+    .textos-header h2 {
+      font-size: 30px;
+      font-weight: 300;
+      color: #fff;
+      text-shadow: 0 0 3px black;
+      text-align: center;
+    }
+
+    iframe {
+        width: 1280px; /* Ancho estándar para videos de YouTube */
+        height: 720px; /* Altura estándar para videos de YouTube */
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto; /* Centrar el video horizontalmente */
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      /*pie de pagina*/
+      footer {
+        margin-top: 20px; /* Espacio de 20px hacia arriba */
+      }
+
+      .column {
+        width: 48%; /* Dos columnas en pantallas grandes */
+        margin-bottom: 0; /* Sin espacio entre columnas */
+      }
+  }
